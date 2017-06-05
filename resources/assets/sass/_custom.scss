@@ -1,6 +1,113 @@
 //Custom SCSS for owner custom style to compile just run in terminal (: npm run dev)
+@import url('https://fonts.googleapis.com/css?family=El+Messiri');
+
 .image img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.jumbotron{
+    background-image: linear-gradient(to top, rgba(0, 0, 0,0.1) 10%,rgba(0, 0, 0,0.3) 50%), url('public/storage/cover_images/Free-Download-1080p-Quality-Photos_1496610479.jpg');
+}
+.jumbotron h1{
+  font-family: 'El Messiri', sans-serif;
+  color: white !important;
+  text-shadow: 2px 2px #095C64;
+}
+.menu-nav{
+  &.effect-4 {
+		a {
+      font-size: 18px;
+      &:after {
+        content: '';
+        transition: width .2s ease-in-out, padding .2s ease-in-out;
+        box-sizing: content-box;
+        position: absolute;
+        top: 50%;
+        left: auto;
+        right: -10px;
+        display: block;
+        height: 1px;
+        width: 0%;
+        margin-top: -2px;
+        background: black;
+      }
+      &:hover {
+        &:after {
+          left: -10px;
+          right: auto;
+          padding: 0 10px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.social-links a{
+  color: #fff;
+  &a:visited{
+    color: #fff;
+  }
+  &a:hover{
+    color: #fff;
+  }
+}
+.social {
+	float: left;
+	margin: 2em 2em;
+  width: 100px;
+  height: 100px;
+	display: block;
+  text-align: center;
+  line-height:103px;
+  color: #fff;
+	position: relative;
+	transform:rotateY(0deg);
+	transition:transform .25s ease-out;
+	transform-style:preserve-3d;
+}
+.social > div {
+	width: 100px;
+  height: 100px;
+  background: #000;
+	position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.social >.front {
+	transform:translateZ(40px);
+}
+.social >.back {
+	background: #3B5998;
+  font-size: 3em;
+	transform:rotateY(-100deg) translateZ(40px);
+}
+
+/*  Social Media Colors
+	Facebook #3B5998
+	Flickr #FE0883
+	Foursquare #8FD400
+	Google+ #C63D2D
+	Instagram #4E433C
+	Linkedin #4875B4
+	Tumblr #2B4964
+	Twitter #33CCFF
+	Vimeo #86B32D
+	Youtube #FF3333
+	Dribbble #ea4c89
+*/
+.social.social-twitter > .back { background: #55ACEE; }
+.social.social-github > .back { background: #f3f3f3; color: #000; }
+.social.social-pinterest > .back { background: #e3262e; }
+.social.social-googleplus > .back { background: #dd4B39; }
+.social.social-skype > .back { background: #12A5F4; }
+.social.social-linkedin > .back { background: #4875B4; }
+.social.social-dribbble > .back { background: #ea4c89; }
+
+/* Hover */
+.social:hover {
+	transform: rotateY(100deg);
 }

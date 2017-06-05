@@ -11,8 +11,8 @@
             </button>
 
             <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}">
-                Laravel Blog
+            <a class="navbar-brand" href="{{ url('/') }}" style="font-family: 'El Messiri', sans-serif; font-weight: bold; font-size: 24px;">
+                Lion Heart
             </a>
         </div>
 
@@ -21,7 +21,7 @@
             <ul class="nav navbar-nav">
                 &nbsp;
             </ul>
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav menu-nav effect-4">
               <li><a href="/">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/services">Services</a></li>

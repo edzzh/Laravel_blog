@@ -114,7 +114,7 @@ class PostsController extends Controller
     public function show($id)
     {
         $post = Post::find($id);
-        return view('posts.show')->with('post', $post);
+        return view('posts.show', compact('slug'))->with('post', $post);
     }
 
     /**
